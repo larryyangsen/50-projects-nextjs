@@ -20,7 +20,7 @@ const ExpandingCards = ({ cards, width = '90vw', height = '50vh' }: IExpandingCa
                     onClick={onClick(id)}
                     className={`${
                         activeId === id ? 'active' : ''
-                    } relative transition-all duration-700 text-white flex-1 m-2 bg-cover bg-center bg-no-repeat rounded-lg h-auto`}
+                    } cursor-pointer relative ease-in-out duration-700 text-white flex-1 m-2 bg-cover bg-center bg-no-repeat rounded-3xl h-auto`}
                 >
                     <h3 className="transition-opacity duration-300 text-xl absolute bottom-2 left-2 opacity-0">
                         {title}

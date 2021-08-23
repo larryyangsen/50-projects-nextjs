@@ -18,12 +18,17 @@ const cards = [
         imageUrl: 'http://picsum.photos/700',
         title: 'Card 3',
     },
+    {
+        id: '4',
+        imageUrl: 'http://picsum.photos/800',
+        title: 'Card 4',
+    },
 ];
 
 const ExpandingCardsPage = () => {
     return (
         <Layout title="Expanding Cards">
-            <ExpandingCards cards={cards} />
+            <ExpandingCards cards={cards} height="60vh" />
         </Layout>
     );
 };
