@@ -11,6 +11,11 @@ const ExpandingCards = ({ cards, width = '90vw', height = '50vh' }: IExpandingCa
     const onClick = (id: string) => () => {
         setActiveId(id);
     };
+
+    if (!cards.length) {
+        return <div className="w-1 h-1 bg-block" />;
+    }
+
     return (
         <div className="flex" style={{ width }}>
             {cards.map(({ id, imageUrl, title }, index) => (
